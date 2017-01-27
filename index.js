@@ -55,13 +55,26 @@ console.log("Listening to port 8080");
 function emitInstructions(response)
 {
 	var out = "<html>";
-	out += "<head><title>Timestamp Microservice</title></head>";
+	out += "<head><title>Timestamp Microservice</title>";
+	out += "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/";
+	out += "bootstrap/3.3.6/css/bootstrap.min.css' />";
+	out += "<style>";
+	out += "body";
+	out += "{";
+	out += "	margin-left: 100px;";
+	out += "	margin-right: 100px;";
+	out += "	margin-top: 50px;";
+	out += "	background-color: cyan";
+	out += "}";
+	out += "";
+	out += "</style>";
+	out += "</head>";
 	out += "<body>";
-	out += "<h1>Timestamp microservices</h1>";
-	out += "Append to the URL a human-readable or a UNIX date.  The service ";
-	out += "will return <strong>&quot;null&quot;</strong> if invalid or a ";
-	out += "JSON object containing the human-readable (natural), a UNIX ";
-	out += "timestamp, and a standard formatted timestamp."
+	out += "<h1 class='text-center'>Timestamp microservices</h1><br />";
+	out += "Append to the URL a human-readable or a UNIX timestamp.<br/><br/>";
+	out += "The service will return <strong>&quot;null&quot;</strong> if ";
+	out += "invalid or a JSON object containing the human-readable ";
+	out += "(natural), a UNIX timestamp, and a standard formatted timestamp."
 	out += "</body></html>";
 
 	return out;
