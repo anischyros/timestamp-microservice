@@ -1,0 +1,19 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp timestamp microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodejs index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anischyros/timestamp-microservice.git"
+  },
+  "author": "Bob Sutton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anischyros/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/anischyros/timestamp-microservice#readme"
+}
